@@ -1,0 +1,8 @@
+<div class="component-editor-wrap">
+    <div style="display: flex; justify-content: center; vertical-align: center;">
+        <h2 class="component-editor-title"></h2>
+    </div>
+    <div style="display: flex; justify-content: center; vertical-align: center;">
+        <textarea   class="component-editor" cols="100" rows="40" (keypress)="userTyping(content$)">{{ content$ | async}}</textarea>
+    </div>
+</div>

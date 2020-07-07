@@ -1,0 +1,15 @@
+<!--<ul class="office-list-unstyled" *ngIf="data">-->
+<!--    <li [ngClass]="{'office-parent': d.children.length && !showChildren,'office-child': d.children.length && showChildren}"-->
+<!--    *ngFor="let d of data.children">-->
+<!--      <span (click)="toggleOffices(d)">{{d.name}}</span>-->
+<!--      <tree *ngIf="d.children.length && showChildren" [data]="d"></tree>-->
+<!--    </li>-->
+<!--  </ul>-->
+
+<!--  <pre>{{data | json}}</pre>-->
+
+
+<ul>
+  <li class="tree-item" (click)="selectFile(file)" *ngFor="let file of data$ | async">{{file.name}}</li>
+</ul>
+
